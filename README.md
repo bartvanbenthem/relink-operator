@@ -2,6 +2,8 @@
 
 A lightweight, concurrent Kubernetes operator built in Rust using `kube-rs`. It automates disaster recovery (DR) storage states by syncing PersistentVolume (PV) metadata across protected and recovery clusters via object storage.
 
+![relink](./relink.png)
+
 ## Overview
 
 The `relink-operator` solves the "orphaned volume" problem during cross-cluster failovers. Instead of manually patching bi-directional storage bindings (`spec.claimRef`) during an outage, this operator splits the lifecycle into two concurrent, decoupled controller loops managed by Custom Resource Definitions (CRDs):
