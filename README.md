@@ -1,6 +1,6 @@
 # relink-operator
 
-A lightweight, concurrent Kubernetes operator built in Rust using `kube-rs`. It automates disaster recovery (DR) storage states by syncing PersistentVolume (PV) metadata across protected and recovery clusters via object storage.
+A lightweight, concurrent Kubernetes operator built in Rust using the `kube-genops` and `kube-objstore` crates. It automates disaster recovery (DR) storage states by syncing PersistentVolume (PV) metadata across protected and recovery clusters via object storage.
 
 ![relink](./relink.png)
 
